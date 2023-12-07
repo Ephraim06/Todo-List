@@ -5,9 +5,12 @@
 }
 
 body {
-    background: #2C3333;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
+    background-image: url('https://images.pexels.com/photos/6102004/pexels-photo-6102004.jpeg') !important;
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333 !important;
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
 }
 
@@ -26,21 +29,22 @@ form {
 form input, form button {
     padding: 0.5rem;
     font-size: 2rem;
-    border: none;
-    background: #395B64;
-    color: #fff;
+    border: 3px solid goldenrod !important;
+    border-radius: 5px !important;
+    background: #ffffffa8;
+    color: #333 !important;
 }
 
 form button {
     color: #A5C9CA;
-    background: #395B64;
+    background: #fff;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 form button:hover {
-    background: #A5C9CA;
-    color: #395B64;
+    background: goldenrod !important;
+    color: #fff;
 }
 
 .todo-container {
@@ -56,22 +60,28 @@ form button:hover {
 
 .todo {
     margin: 0.5rem;
-    background: #395B64;
-    color: #fff;
-    font-size: 1.5rem;
+    background: #ffffff00;
+    color: black !important;
+    font-size: 1rem;
+    border: 3px solid goldenrod !important;
+    border-radius: 5px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 0.5s ease;
 }
 
+.golden {
+    color: goldenrod !important;
+}
+
 .todo li {
     flex: 1;
 }
 .trash-btn {
-    color: #A5C9CA;
-    background: #395B64;
-    border: none;
+    color: #fff;
+    background: goldenrod !important;
+    border: goldenrod 2px solid;
     padding: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -79,24 +89,32 @@ form button:hover {
 }
 
 .trash-btn:hover {
-    background: red;
-    color: #fff;
+    color: goldenrod !important;
+    background: #fff !important;
 }
 
 .complete-btn{
-    color: #A5C9CA;
-    background: #395B64;
-    border: none;
+    color: goldenrod;
+    background: #fff;
+    border: goldenrod 2px solid;
+    border-left: solid goldenrod 3px !important;
     padding: 1rem;
     cursor: pointer;
     font-size: 1rem;
 }
 
 .complete-btn:hover {
-    background: rgb(43, 255, 0);
     color: #fff !important;
+    background: goldenrod !important;
 }
 
+.fa-square-plus{
+    color: goldenrod !important;
+}
+
+.fa-square-plus:hover{
+    color: #fff !important;
+}
 
 .todo-item {
     padding: 0rem 0.5rem;
@@ -110,6 +128,7 @@ form button:hover {
 .completed{
     text-decoration: line-through;
     opacity: 0.5;
+    color: green  !important;
 }
 
 .fall{
@@ -122,6 +141,7 @@ select{
     -moz-appearance: none;
     outline: none;
     border: none;
+    color: goldenrod !important;
 }
 
 .select {
@@ -131,16 +151,18 @@ select{
 }
 
 select {
-    color: black;
+    color: goldenrod !important;
     width: 10rem;
     cursor: pointer;
+    border: 3px solid goldenrod !important;
+    border-radius: 5px;
     padding: 1rem;
 }
 
 .select::after {
     content: "\25BC";
     position: absolute;
-    background: #395B64;
+    background: #395b6400 !important;
     top: 0;
     right: 0;
     padding: 1rem;
@@ -149,8 +171,8 @@ select {
 }
 
 select:hover::after {
-    background: #fff;
-    color: #395B64;
+    background: #ffffff00;
+    color: goldenrod !important;
 }
 
 p {
@@ -158,6 +180,6 @@ p {
     margin-left: 45%;
     margin-top: 25%;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: x-small;
 }
